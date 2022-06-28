@@ -35,7 +35,7 @@
                                 </small>
                             </h2>
                             <a href="#" class="fs-lg fw-500 text-white opacity-70" data-obj-action="view_idList">Learn more &gt;&gt;</a>
-                            <?php if (!$_sys->isMobile() && $idListForDebug) :?>
+                            <?php if (!___isMobile() && $idListForDebug) :?>
                                 <div id="id_forDebug" style="display:none; height:150px; overflow:scroll;"><?= $idListForDebug ?></div>
                             <?php endif ?>
                             <div class="d-sm-flex flex-column align-items-center justify-content-center d-md-block">
@@ -62,7 +62,7 @@
                             <h1 class="text-white fw-500 mb-3 d-sm-block d-md-none" data-obj-action="view_idList">
                                 로그인
                             </h1>
-                            <?php if ($_sys->isMobile() && $idListForDebug) :?>
+                            <?php if (___isMobile() && $idListForDebug) :?>
                                 <div id="id_forDebug" style="display:none; height:150px; overflow:scroll;"><?= $idListForDebug ?></div>
                             <?php endif ?>
                             <div class="card p-4 rounded-plus bg-faded">
