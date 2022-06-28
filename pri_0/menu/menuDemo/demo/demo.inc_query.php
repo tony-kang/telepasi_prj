@@ -1,6 +1,6 @@
 <?php
 $sql = new TonySql(S_DB);
-$sql->addTable('prj_demoTable','T');
+$sql->addTable('prj_demo1','T');
 $sql->addLeftJoinTable('t_mbrdata','M','M.uid = T.regMbr');
 $sql->addField('T.*');
 $sql->addField('M.name as regMbrName');

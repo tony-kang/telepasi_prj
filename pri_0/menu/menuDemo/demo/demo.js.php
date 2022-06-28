@@ -12,3 +12,7 @@ $('[data-obj-action="delete_demoData"]').on('click',function(e) {
     var gPara = $(this).data('obj-para');
     ___GET('edit=delete,gPara='+gPara);
 });
+
+$(document).ready(function() {
+    $htmlEditor = new_htmlEditor('.my-wysiwyg-editor');
+});
