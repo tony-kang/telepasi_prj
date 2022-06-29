@@ -19,6 +19,19 @@ function ___tableListDemo($_listArr,$p) {
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'data 8'   ,'width'=>60],
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'data 9'   ,'width'=>60],
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'data 10'   ,'width'=>60],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'data 11'  ,'width'=>60],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'data 12'  ,'width'=>80],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'data 13'   ,'width'=>60],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'data 14'   ,'width'=>60],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'data 15'   ,'width'=>60],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'data 16'   ,'width'=>60],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'data 17'   ,'width'=>60],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'data 18'   ,'width'=>60],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'data 19'   ,'width'=>60],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'data 20'   ,'width'=>60],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'number 21'   ,'width'=>60],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'number 22'   ,'width'=>60],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'text 31'   ,'width'=>60],
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'등록일'   ,'width'=>60],
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'등록자'   ,'width'=>60],
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'Action'  ,'width'=>30]
@@ -52,6 +65,19 @@ function ___tableListDemo($_listArr,$p) {
         $mTable->tableTd($d['data_8']);
         $mTable->tableTd($d['data_9']);
         $mTable->tableTd($d['data_10']);
+        $mTable->tableTd($d['data_11']);
+        $mTable->tableTd($d['data_12']);
+        $mTable->tableTd($d['data_13']);
+        $mTable->tableTd($d['data_14']);
+        $mTable->tableTd($d['data_15']);
+        $mTable->tableTd($d['data_16']);
+        $mTable->tableTd($d['data_17']);
+        $mTable->tableTd($d['data_18']);
+        $mTable->tableTd($d['data_19']);
+        $mTable->tableTd($d['data_20']);
+        $mTable->tableTd($d['number_21']);
+        $mTable->tableTd($d['number_22']);
+        $mTable->tableTd($d['text_31']);
         $mTable->tableTd(___date($d['regDate']));
         $mTable->tableTd($d['regMbrName']);
         $mTable->tableTd($actionMenu);

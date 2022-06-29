@@ -23,7 +23,8 @@ $_nav['menuDemo'] = [
     'title' => '데모',
     'icon' => 'fal fa-file-powerpoint',
     'items' => [
-        'order'      => [ 'title' => '데모 기능', 'url' => '/?cfg=menuDemo&mN=demo' ],
+        'demo1'      => [ 'title' => '데모 (1)', 'url' => '/?cfg=menuDemo&mN=demo1' ],
+        'demo2'      => [ 'title' => '데모 (2)', 'url' => '/?cfg=menuDemo&mN=demo2' ],
     ]
 ];
 

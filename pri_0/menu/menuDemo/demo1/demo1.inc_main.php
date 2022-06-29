@@ -9,7 +9,7 @@
 //################################################################################################################
 // XXX.inc_main
 //################################################################################################################
-$_editDb['title'] = '데모 리스트';
+$_editDb['title'] = '데모 리스트(1)';
 $_editDb['table'] = 'prj_demo1';        // database table name
 $_editDb['puField'] = 'no';             // primary or unique Key field
 $_editDb['puType'] = NUMBER_FIELD;      // primary or unique Key type : NUMBER_FIELD or STRING_FIELD
