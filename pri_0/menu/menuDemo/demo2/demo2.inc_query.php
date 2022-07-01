@@ -15,6 +15,7 @@ if (___pOk($_pg['sKey2'])) {
 }
 
 $sql->orderBy('T.no DESC');
+$sql->page($_pg['page'],$_pg['pSize']);
 $_listArr = $sql->getRows();
 
 //___debug($sql->getWhere());

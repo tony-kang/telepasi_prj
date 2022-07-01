@@ -6,9 +6,6 @@
  *
  */
 
-const PRJ_NAME = '테스트 프로젝트';
-const MY_PRJ_TITLE = 'Telepasi Framework';
-
 //global 선언없이 함수 안에서 사용될 로고를 상수를 정의
 const PRJ_LOGO_FILE = MY_PRJ_ASSETS_URL.'/img/tonySign_black.png';
 const PRJ_LOGO_FILE_1 = MY_PRJ_ASSETS_URL.'/img/tonySign_e8e8e8.png';

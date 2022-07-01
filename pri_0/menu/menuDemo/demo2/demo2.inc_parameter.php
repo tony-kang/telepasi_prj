@@ -7,7 +7,7 @@
  */
 
 $_pg['page'] = ___get('page',1);
-$_pg['pSize'] = ___get('pSize',15);
+$_pg['pSize'] = ___get('pSize',2);
 
 $_pg['sKey1'] = ___get('sKey1');
 $_pg['sKey2'] = ___get('sKey2');

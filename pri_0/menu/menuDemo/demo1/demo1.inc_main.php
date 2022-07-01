@@ -7,16 +7,14 @@
  */
 
 //################################################################################################################
-// XXX.inc_main
+// 아래쪽 데이타는 기본값 = 코딩하지 않아도 됨 --> 바꿔야 될 것이 있다면 -->make() 전에 추가
+// iudInsertField('regMbr | regDate')->iudUpdateField('updateMbr | updateDate')->iudDeleteField('deleted | deleteMbr | deleteDate');
 //################################################################################################################
-$_editDb['title'] = '데모 리스트(1)';
-$_editDb['table'] = 'prj_demo1';        // database table name
-$_editDb['puField'] = 'no';             // primary or unique Key field
-$_editDb['puType'] = NUMBER_FIELD;      // primary or unique Key type : NUMBER_FIELD or STRING_FIELD
-$_editDb['getPara'] = 'gPara';          // get parameter name
-$_editDb['formId'] = 'id_dbTableDemo';  // form ID
-$_editDb['iudField'] = [ 'insert'=>'regMbr | regDate' ,'update'=>'updateMbr | updateDate' ,'delete'=>'deleted | deleteMbr | deleteDate' ]; // 왠만한 테블에는 모두 추가해 주세요.
+$_dbEditForm = new MyDbEditForm('id_dbTableDemo','prj_demo1','데모 리스트(1)');
+$_editDb = $_dbEditForm->puField('no')->puType(NUMBER_FIELD)->puParaName('gPara')->make();
 //----------------------------------------------------------------------------------------------------------------
+//___print($_editDb);
+
 
 //----------------------------------------------------------------------------------------------------------------
 $_pg['btnArr'] = $_btnArr = [

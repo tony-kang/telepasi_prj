@@ -6,12 +6,12 @@
  *
  */
 //##########################################################################################################
-echo ___pageTitle($_editDb['title']);
+echo ___pageTitle($_editDb['mainTitle']);
 echo html_searchAndButtons($_searchArr,$_btnArr);
 if ($_listArr['pageDataCnt'] > 0) {
-    echo html_pagination('','',$_listArr['pageDataCnt'],$_listArr['dataCnt'],$_pageArr);
+    echo ___pageInfo($_listArr['pageDataCnt'],$_listArr['dataCnt'],$_pageArr);
     echo ___tableListDemo($_listArr,$_pg);
-    echo html_pagination('','',$_listArr['pageDataCnt'],$_listArr['dataCnt'],$_pageArr);
+    echo ___pageInfo($_listArr['pageDataCnt'],$_listArr['dataCnt'],$_pageArr);
 } else {
     echo ___dataIsNone();
 }
