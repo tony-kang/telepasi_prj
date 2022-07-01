@@ -5,7 +5,7 @@
  *
  * @return string
  */
-function ___tableListDemo($_listArr,$p) {
+function ___tableListDemo2($_listArr,$p) {
     $_colArr[0] = [
         /* 헤더 기준 칼럼  */
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'#'  ,'width'=>40],

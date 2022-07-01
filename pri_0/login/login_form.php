@@ -78,13 +78,13 @@
                                       >
                                     <div class="form-group">
                                         <label class="form-label" for="username">Username</label>
-                                        <input type="text" id="username" class="form-control form-control-lg" placeholder="your id or email" value="honggildong@site.com" required>
+                                        <input type="text" id="username" class="form-control form-control-lg" placeholder="your ID or Email" required>
                                         <div class="invalid-feedback">No, you missed this one.</div>
                                         <div class="help-block">Your unique username to app</div>
                                     </div>
                                     <div class="form-group">
                                         <label class="form-label" for="password">Password</label>
-                                        <input type="password" id="password" class="form-control form-control-lg" placeholder="password" value="12345" required>
+                                        <input type="password" id="password" class="form-control form-control-lg" placeholder="password" required>
                                         <div class="invalid-feedback">Sorry, you missed this one.</div>
                                         <div class="help-block">Your password</div>
                                     </div>

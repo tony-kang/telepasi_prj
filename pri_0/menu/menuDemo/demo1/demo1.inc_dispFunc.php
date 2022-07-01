@@ -5,7 +5,7 @@
  *
  * @return string
  */
-function ___tableListDemo($_listArr,$p) {
+function ___tableListDemo1($_listArr,$p) {
     $_colArr[0] = [
         /* 헤더 기준 칼럼  */
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'#'  ,'width'=>40],
@@ -44,6 +44,7 @@ function ___tableListDemo($_listArr,$p) {
 
     //--------------------------------------
     $i = 1;
+    $d5Arr = ___envArr('X006','env_prj.txt');
     foreach($_listArr['pageData'] as $d) {
         $aMenu = new ActionMenu();
         //-----------------------------------------------------------------------------
@@ -52,6 +53,7 @@ function ___tableListDemo($_listArr,$p) {
         $aMenu->add(true,___amData(['obj-action'=>"delete_demoData", 'obj-para'=>$encNo],'삭제'));
         $actionMenu = $aMenu->html();
 
+        $d5 = ___getCheckBoxValue($d5Arr,$d['data_5']);
 
         $mTable->tableTrStart();    //'bg-fusion-500'
         $mTable->tableTd($d['no']);
@@ -59,7 +61,7 @@ function ___tableListDemo($_listArr,$p) {
         $mTable->tableTd($d['data_2']);
         $mTable->tableTd($d['data_3']);
         $mTable->tableTd($d['data_4']);
-        $mTable->tableTd($d['data_5']);
+        $mTable->tableTd($d5);
         $mTable->tableTd($d['data_6']);
         $mTable->tableTd($d['data_7']);
         $mTable->tableTd($d['data_8']);

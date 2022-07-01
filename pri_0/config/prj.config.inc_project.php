@@ -28,6 +28,8 @@ const HEADER_AREA_DEBUG = false;        // 컨텐츠 메인창에 Debug 영역 �
 const PHP_CALL_TRACE = false;           // 메인 컨텐츠 파일 호출 순서 Trace 보기.
 const PHP_CSS_JS_TRACE = true;          // 메인 컨텐츠 파일 호출 순서 Trace 보기.
 const DEBUG_SRC_FILE_NAME = false;      // 메인 컨텐츠 파일 호출 PHP source filename 보기.
+const LOGOUT_ALERT = true;              // 로그아웃시 컨펌 Alert 사용
+
 //################################################################################################
 // 사이트 실행관련 셋팅
 //################################################################################################

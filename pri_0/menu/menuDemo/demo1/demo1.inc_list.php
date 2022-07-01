@@ -6,13 +6,17 @@
  *
  */
 //##########################################################################################################
-echo ___pageTitle($_editDb['title']);
+echo ___pageTitle($_editDb['mainTitle']);
 echo html_searchAndButtons($_searchArr,$_btnArr);
 if ($_listArr['pageDataCnt'] > 0) {
-    echo html_pagination('','',$_listArr['pageDataCnt'],$_listArr['dataCnt'],$_pageArr);
-    echo ___tableListDemo($_listArr,$_pg);
-    echo html_pagination('','',$_listArr['pageDataCnt'],$_listArr['dataCnt'],$_pageArr);
+    echo ___pageInfo($_listArr['pageDataCnt'],$_listArr['dataCnt'],$_pageArr);
+    echo ___tableListDemo1($_listArr,$_pg);
+    echo ___pageInfo($_listArr['pageDataCnt'],$_listArr['dataCnt'],$_pageArr);
+
+    if (is_array($_excelDialog)) {
+        $_excelDialog['listQuery'] = ___makeCsvQuery($_listArr['q']);
+        echo ___saveExcelDialog($_excelDialog); //excel 저장 Dialog
+    }
 } else {
     echo ___dataIsNone();
 }
-
