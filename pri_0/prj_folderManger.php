@@ -22,6 +22,8 @@ default:
         $fo_2 = 'menu';
         if ($_site['cfg']) $fo_2 .= '/'.$_site['cfg'];
         if ($_site['mN']) $fo_2 .= '/'.$_site['mN'];
+
+        //___debug($fo_2);
     }
     break;
 }

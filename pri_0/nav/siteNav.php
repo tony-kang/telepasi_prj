@@ -74,11 +74,11 @@ if (___isAdmin()) {
         'icon' => 'fal fa-flag-checkered',
         'items' => [
             'docManager'        => [ 'title' => '최근문서'      , 'url' => '/?cfg=menuDocument&mN=docManager' ],
-            'mesManual'        => [ 'title' => '사용자 메뉴얼'      , 'url' => '/?cfg=menuDocument&mN=docManager&docPrefix=MANUAL_001' ],
             'user'              => [ 'title' => '사용자'       , 'url' => '/?cfg=menuEnv&mN=user' ],
+            'prEnv'             => [ 'title' => '프로젝트 환경설정'   , 'url' => '/?cfg=menuEnv&mN=prjEnv' ],
+            'mesManual'         => [ 'title' => '사용자 메뉴얼'      , 'url' => '/?cfg=menuDocument&mN=docManager&docPrefix=MANUAL_001' ],
             //'part'            => [ 'title' => '조직(부서)'    , 'url' => '/?cfg=menuEnv&mN=part' ],
-            'prEnv'           => [ 'title' => '프로젝트 환경설정'  , 'url' => '/?cfg=menuEnv&mN=prjEnv' ],
-            'inspectionType'    => [ 'title' => '불량유형관리'    , 'url' => '/?cfg=menuEnv&mN=inspectionType&mT=type1&iType=type1' ],
+            //'inspectionType'  => [ 'title' => '불량유형관리'    , 'url' => '/?cfg=menuEnv&mN=inspectionType&mT=type1&iType=type1' ],
         ]
     ];
 }
