@@ -45,15 +45,20 @@ function ___tableListDemo1($_listArr,$p) {
     //--------------------------------------
     $i = 1;
     $d5Arr = ___envArr('X006','env_prj.txt');
+    $d15Arr = ___calendarGroupArr();
+
     foreach($_listArr['pageData'] as $d) {
-        $aMenu = new ActionMenu();
+        // 자유롭게 코딩가능한 영역입니다.
+
         //-----------------------------------------------------------------------------
+        $aMenu = new ActionMenu();
         $encNo = ___makeEncode($d['no']);
         $aMenu->add(true,___amData(['obj-action'=>"edit_demoData", 'obj-para'=>$encNo],'수정'));
         $aMenu->add(true,___amData(['obj-action'=>"delete_demoData", 'obj-para'=>$encNo],'삭제'));
         $actionMenu = $aMenu->html();
 
         $d5 = ___getCheckBoxValue($d5Arr,$d['data_5']);
+        $d15 = $d15Arr[$d['data_15']];
 
         $mTable->tableTrStart();    //'bg-fusion-500'
         $mTable->tableTd($d['no']);
@@ -71,7 +76,7 @@ function ___tableListDemo1($_listArr,$p) {
         $mTable->tableTd($d['data_12']);
         $mTable->tableTd($d['data_13']);
         $mTable->tableTd($d['data_14']);
-        $mTable->tableTd($d['data_15']);
+        $mTable->tableTd($d15);
         $mTable->tableTd($d['data_16']);
         $mTable->tableTd($d['data_17']);
         $mTable->tableTd($d['data_18']);

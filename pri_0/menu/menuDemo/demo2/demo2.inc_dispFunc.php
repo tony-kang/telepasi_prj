@@ -35,8 +35,10 @@ function ___tableListDemo2($_listArr,$p) {
     //--------------------------------------
     $i = 1;
     foreach($_listArr['pageData'] as $d) {
-        $aMenu = new ActionMenu();
+        // 자유롭게 코딩가능한 영역입니다.
+
         //-----------------------------------------------------------------------------
+        $aMenu = new ActionMenu();
         $encNo = ___makeEncode($d['no']);
         $aMenu->add(true,___amData(['obj-action'=>"edit_demoData", 'obj-para'=>$encNo],'수정'));
         $aMenu->add(true,___amData(['obj-action'=>"delete_demoData", 'obj-para'=>$encNo],'삭제'));

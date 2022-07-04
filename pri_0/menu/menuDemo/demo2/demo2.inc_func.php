@@ -1,7 +1,4 @@
 <?php
 /**
- * @author tony on 2022. 5. 17.
- * @author Tony Kang <bluein007@gmail.com>
- * Description
- *
+ * 기능구현에 필요한 함수들을 여기에 만들어 주세요.
  */
