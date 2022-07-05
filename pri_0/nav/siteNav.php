@@ -69,11 +69,12 @@ $_nav['menuEtc']['items']['calendar'] = [ 'title' => '업무일정(전체)', 'ur
 
 
 if (___isAdmin()) {
-    $_nav['menuEnv'] = [
+    $_nav['adminMenu'] = [
         'title' => '관리자-환경설정',
         'icon' => 'fal fa-flag-checkered',
         'items' => [
-            'docManager'        => [ 'title' => '최근문서'      , 'url' => '/?cfg=menuDocument&mN=docManager' ],
+            'docManager'        => [ 'title' => '최근문서'          , 'url' => '/?cfg=menuDocument&mN=docManager' ],
+            'template'          => [ 'title' => 'HTML 템플리트'     , 'url' => '/?cfg=adminMenu&mN=template' ],
             'user'              => [ 'title' => '사용자'       , 'url' => '/?cfg=menuEnv&mN=user' ],
             'prEnv'             => [ 'title' => '프로젝트 환경설정'   , 'url' => '/?cfg=menuEnv&mN=prjEnv' ],
             'mesManual'         => [ 'title' => '사용자 메뉴얼'      , 'url' => '/?cfg=menuDocument&mN=docManager&docPrefix=MANUAL_001' ],

@@ -1,5 +1,6 @@
 <?php
 /***
+ * 화면출력 함수
  * @param $dataArr  : 출력데이타 배열  : 실제데이타는 $dataArr[pageData]에 들어 있음.
  * @param $p        : 기본 파라미터 : $_pg가 연결된다.
  *
