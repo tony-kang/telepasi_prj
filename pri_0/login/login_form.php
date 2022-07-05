@@ -73,7 +73,7 @@
                                       ?>
                                       data-actionID="login"
                                       data-referer="<?php echo ___getReferenceUrl(); ?>"
-                                      data-start="/"
+                                      data-start="/?cfg=<?= PRJ_START_MENU ?>"
                                       data-ssID="<?php echo session_id(); ?>"
                                       >
                                     <div class="form-group">
