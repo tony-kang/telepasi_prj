@@ -16,6 +16,7 @@
                             */ ?>
                         </a>
                     </div>
+                    <a class="btn-link text-white ml-auto"><?= MY_PRJ_TITLE ?></a>
                     <a href="/?cfg=join" class="btn-link text-white ml-auto">
                         Create Account
                     </a>
@@ -26,9 +27,9 @@
                     <div class="row">
                         <div class="col col-md-6 col-lg-7 hidden-sm-down">
                             <h2 class="fs-xxl fw-500 mt-4 text-white">
-                                <my style="color:red;">Telepasi</my> Demo
+                                <my style="color:red;">Ondongne</my> Rent Manager
                                 <small class="h3 fw-300 mt-3 mb-5 text-white opacity-60">
-                                    데모 프로젝트
+                                    온동네 임대관리
                                 </small>
                             </h2>
                             <a href="#" class="fs-lg fw-500 text-white opacity-70" data-obj-action="view_idList">Learn more &gt;&gt;</a>
