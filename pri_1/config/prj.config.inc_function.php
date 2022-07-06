@@ -24,3 +24,12 @@ function prj___templateReplace($templateStr)
 
     return $r;
 }
+
+/***
+ * 메인화면의 Header 영역에 표시될 텍스트
+ * @return mixed
+ */
+function ___getHeaderText() {
+    $text = ___myManageHouse();
+    return $text;
+}

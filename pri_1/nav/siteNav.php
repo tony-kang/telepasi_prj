@@ -1,20 +1,16 @@
 <?php
 // modify the navigation for demonstration purposes
 $_nav['menuDashboard'] = [
-    'title' => 'Dashboard',
+    'title' => ___myManageHouse(),
     'icon' => 'fal fa-analytics',
     'items' => [
-        'custCountry' => [
-            'title' => '대시보드 1',
-            'url' => '/?cfg=menuDashboard&mN=custCountry'
+        'complexLayout' => [
+            'title' => '단지구성도',
+            'url' => '/?cfg=menuDashboard&mN=complexLayout'
         ],
-        'globalCustomer' => [
-            'title' => '대시보드 2',
-            'url' => '/?cfg=menuDashboard&mN=globalCustomer'
-        ],
-        'globalCustomer2' => [
-            'title' => '대시보드 3',
-            'url' => '/?cfg=menuDashboard&mN=globalCustomer2'
+        'complexSummary' => [
+            'title' => '단지현황',
+            'url' => '/?cfg=menuDashboard&mN=complexDashboard'
         ]
     ]
 ];
@@ -35,9 +31,9 @@ $_nav['menuPayment'] = [
     'title' => '수납 관리',
     'icon' => 'fal fa-file-powerpoint',
     'items' => [
-        'newContract'   => ['title' => '수납 현황', 'url' => '/?cfg=menuRent&mN=newContract'],
-        'newContract'   => ['title' => '연체 세대', 'url' => '/?cfg=menuRent&mN=newContract'],
-        'tbReContract'  => ['title' => '완납 세대', 'url' => '/?cfg=menuRent&mN=tbReContract'],
+        'payment'           => ['title' => '수납 현황', 'url' => '/?cfg=menuRent&mN=payment'],
+        'paymentOverdue'    => ['title' => '연체 세대', 'url' => '/?cfg=menuRent&mN=paymentOverdue'],
+        'paymentOk'         => ['title' => '완납 세대', 'url' => '/?cfg=menuRent&mN=paymentOk'],
     ]
 ];
 $_nav['menuInsurance'] = [

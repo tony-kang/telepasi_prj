@@ -9,7 +9,7 @@
 const PRJ_DB_HOST = '211.253.27.169';
 const PRJ_DB_USER = 'root';
 const PRJ_DB_PASSWORD = 'thfxmelql!';
-const PRJ_DB_DATABASE = 'tpw_prj_0';
+const PRJ_DB_DATABASE = '007Framework';
 const PRJ_DB_PORT = '19306';
 
 const PRJ_DB_DESC = 'DEV_REMOTE';   //개발_원격디비서버

@@ -12,6 +12,10 @@
 //################################################################################################################
 $_dbEditForm = new MyDbEditForm('id_dbTableDemo','prj_demo1','데모 리스트(1)');
 $_editDb = $_dbEditForm->puField('no')->puType(NUMBER_FIELD)->puParaName('gPara')->listViewer('___tableListDemo1')->make();
+$_editDb['breadcrumbs'] = array(
+    ['caption'=>'데모','url'=>''],
+    ['caption'=>'데모(1)','url'=>'']
+);
 //___print($_editDb);
 
 

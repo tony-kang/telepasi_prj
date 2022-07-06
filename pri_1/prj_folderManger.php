@@ -10,6 +10,12 @@
 $fo_1 = MY_PRJ_CODE_PATH;
 
 switch ($_site['cfg']) {
+case 'menuDashboard':
+    if (substr($_site['mN'],0,7) == 'complex') {
+        $fo_2 = 'rentManager/complex';
+        if ($_site['mN']) $fo_2 .= '/'.$_site['mN'];
+    }
+    break;
 case 'home':
     //___debug('홈페이지');
     $fo_2 = 'home';
