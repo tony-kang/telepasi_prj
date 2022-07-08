@@ -10,26 +10,20 @@
 $fo_1 = MY_PRJ_CODE_PATH;
 
 switch ($_site['cfg']) {
-case 'menuDashboard':
+case 'dashboard':
     if (substr($_site['mN'],0,7) == 'complex') {
-        $fo_2 = 'rentManager/complex';
-        if ($_site['mN']) $fo_2 .= '/'.$_site['mN'];
+        $fo_1.= '/menu/rentManager';
     }
     break;
-case 'home':
-    //___debug('홈페이지');
-    $fo_2 = 'home';
+case 'complexConfig':
+    $fo_1.= '/menu';
     break;
 case 'menuEnv':
     $fo_2 = 'env';
     break;
 default:
     if (substr($_site['cfg'],0,4) == 'menu') {
-        $fo_2 = 'menu';
-        if ($_site['cfg']) $fo_2 .= '/'.$_site['cfg'];
-        if ($_site['mN']) $fo_2 .= '/'.$_site['mN'];
-
-        //___debug($fo_2);
+        $fo_1 .= '/menu';
     }
     break;
 }

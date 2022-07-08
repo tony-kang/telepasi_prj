@@ -70,7 +70,7 @@
                                       ?>
                                       data-actionID="login"
                                       data-referer="<?php echo ___getReferenceUrl(); ?>"
-                                      data-start="/?cfg=<?= PRJ_START_MENU ?>"
+                                      data-start="<?= '/?cfg='.PRJ_START_MENU.'&mN='.PRJ_START_MENU_ITEM.'&mG='.PRJ_START_MENU_GROUP ?>"
                                       data-ssID="<?php echo session_id(); ?>"
                                       >
                                     <div class="form-group">

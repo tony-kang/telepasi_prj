@@ -1,16 +1,16 @@
 <?php
 // modify the navigation for demonstration purposes
-$_nav['menuDashboard'] = [
+$_nav['dashboard'] = [
     'title' => ___myManageHouse(),
     'icon' => 'fal fa-analytics',
     'items' => [
         'complexLayout' => [
             'title' => '단지구성도',
-            'url' => '/?cfg=menuDashboard&mN=complexLayout'
+            'url' => '/?cfg=dashboard&mN=complexLayout&mG=complex'
         ],
         'complexSummary' => [
             'title' => '단지현황',
-            'url' => '/?cfg=menuDashboard&mN=complexDashboard'
+            'url' => '/?cfg=dashboard&mN=complexSummary&mG=complex'
         ]
     ]
 ];
@@ -19,11 +19,11 @@ $_nav['menuRent'] = [
     'title' => '임대 관리',
     'icon' => 'fal fa-file-powerpoint',
     'items' => [
-        'newContract'   => ['title' => '신규계약 세대', 'url' => '/?cfg=menuRent&mN=newContract'],
-        'tbReContract'  => ['title' => '갱신예정 세대', 'url' => '/?cfg=menuRent&mN=tbReContract'],
-        'tbMoveOut'     => ['title' => '퇴거예정 세대', 'url' => '/?cfg=menuRent&mN=tbMoveOut'],
-        'living'        => ['title' => '입주 세대', 'url' => '/?cfg=menuRent&mN=living'],
-        'moveComplete'  => ['title' => '퇴거 세대', 'url' => '/?cfg=menuRent&mN=moveComplete'],
+        'newContract'   => ['title' => '신규계약 세대', 'url' => '/?cfg=menuRent&mN=newContract&mG=complex'],
+        'tbReContract'  => ['title' => '갱신예정 세대', 'url' => '/?cfg=menuRent&mN=tbReContract&mG=complex'],
+        'tbMoveOut'     => ['title' => '퇴거예정 세대', 'url' => '/?cfg=menuRent&mN=tbMoveOut&mG=complex'],
+        'living'        => ['title' => '입주 세대', 'url' => '/?cfg=menuRent&mN=living&mG=complex'],
+        'moveComplete'  => ['title' => '퇴거 세대', 'url' => '/?cfg=menuRent&mN=moveComplete&mG=complex'],
     ]
 ];
 
@@ -31,17 +31,17 @@ $_nav['menuPayment'] = [
     'title' => '수납 관리',
     'icon' => 'fal fa-file-powerpoint',
     'items' => [
-        'payment'           => ['title' => '수납 현황', 'url' => '/?cfg=menuRent&mN=payment'],
-        'paymentOverdue'    => ['title' => '연체 세대', 'url' => '/?cfg=menuRent&mN=paymentOverdue'],
-        'paymentOk'         => ['title' => '완납 세대', 'url' => '/?cfg=menuRent&mN=paymentOk'],
+        'payment'           => ['title' => '수납 현황', 'url' => '/?cfg=menuRent&mN=payment&mG=complex'],
+        'paymentOverdue'    => ['title' => '연체 세대', 'url' => '/?cfg=menuRent&mN=paymentOverdue&mG=complex'],
+        'paymentOk'         => ['title' => '완납 세대', 'url' => '/?cfg=menuRent&mN=paymentOk&mG=complex'],
     ]
 ];
 $_nav['menuInsurance'] = [
     'title' => '보증보험 관리',
     'icon' => 'fal fa-file-powerpoint',
     'items' => [
-        'tbReContract'  => ['title' => '수수료 수납현황', 'url' => '/?cfg=menuRent&mN=tbReContract'],
-        'newContract'   => ['title' => '수수료 일괄부과', 'url' => '/?cfg=menuRent&mN=newContract'],
+        'tbReContract'  => ['title' => '수수료 수납현황', 'url' => '/?cfg=menuRent&mN=tbReContract&mG=complex'],
+        'newContract'   => ['title' => '수수료 일괄부과', 'url' => '/?cfg=menuRent&mN=newContract&mG=complex'],
     ]
 ];
 
@@ -81,10 +81,21 @@ $_nav['menuEtc'] = [
 ];
 
 if ($_SESSION['mbr']['myTodo']) {
-    $_nav['menuEtc']['items']['myTodo'] = [ 'title' => 'my Todo', 'url' => '/?cfg=menuDashboard&mN=myTodo' ];
+    $_nav['menuEtc']['items']['myTodo'] = [ 'title' => 'my Todo', 'url' => '/?cfg=dashboard&mN=myTodo' ];
 }
-$_nav['menuEtc']['items']['calendar'] = [ 'title' => '업무일정(전체)', 'url' => '/?cfg=menuDashboard&mN=calendar' ];
+$_nav['menuEtc']['items']['calendar'] = [ 'title' => '업무일정(전체)', 'url' => '/?cfg=dashboard&mN=calendar' ];
 
+
+if (___isAdmin()) {
+    $_nav['complexConfig'] = [
+        'title' => ___myManageHouse().' 설정',
+        'icon' => 'fal fa-flag-checkered',
+        'items' => [
+            'configDong'      => [ 'title' => '동 구성관리' , 'url' => '/?cfg=complexConfig&mN=configDong&mG=complexConfig' ],
+            'configHo'        => [ 'title' => '호실 관리'   , 'url' => '/?cfg=complexConfig&mN=configHo&mG=complexConfig' ],
+        ]
+    ];
+}
 
 if (___isAdmin()) {
     $_nav['adminMenu'] = [
@@ -107,8 +118,8 @@ if (___isDeveloper()) {
         'title' => '데모',
         'icon' => 'fal fa-file-powerpoint',
         'items' => [
-            'demo1' => ['title' => '데모 (1)', 'url' => '/?cfg=menuDemo&mN=demo1'],
-            'demo2' => ['title' => '데모 (2)', 'url' => '/?cfg=menuDemo&mN=demo2'],
+            'demo1' => ['title' => '데모 (1)', 'url' => '/?cfg=menuDemo&mN=demo1&mG=demo'],
+            'demo2' => ['title' => '데모 (2)', 'url' => '/?cfg=menuDemo&mN=demo2&mG=demo'],
         ]
     ];
 }

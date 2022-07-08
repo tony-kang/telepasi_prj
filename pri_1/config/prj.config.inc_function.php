@@ -6,6 +6,9 @@
  *
  */
 
+//프로젝트에서 사용되는 공용 변수 및 함수 Include
+___includeFolder(MY_PRJ_CODE_PATH.'/common');
+
 //템플릿 문서를 Load시 replace되는 문자열을 처리합니다.
 //이 함수를 삭제하지 마시고 내용을 수정하세요.
 function prj___templateReplace($templateStr)

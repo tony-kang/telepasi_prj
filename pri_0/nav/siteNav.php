@@ -1,20 +1,20 @@
 <?php
 // modify the navigation for demonstration purposes
-$_nav['menuDashboard'] = [
+$_nav['dashboard'] = [
     'title' => 'Dashboard',
     'icon' => 'fal fa-analytics',
     'items' => [
         'custCountry' => [
             'title' => '글로벌 고객현황(1)',
-            'url' => '/?cfg=menuDashboard&mN=custCountry'
+            'url' => '/?cfg=dashboard&mN=custCountry'
         ],
         'globalCustomer' => [
             'title' => '글로벌 고객현황(2)',
-            'url' => '/?cfg=menuDashboard&mN=globalCustomer'
+            'url' => '/?cfg=dashboard&mN=globalCustomer'
         ],
         'globalCustomer2' => [
             'title' => '글로벌 고객현황(3)',
-            'url' => '/?cfg=menuDashboard&mN=globalCustomer2'
+            'url' => '/?cfg=dashboard&mN=globalCustomer2'
         ]
     ]
 ];
@@ -23,8 +23,8 @@ $_nav['menuDemo'] = [
     'title' => '데모',
     'icon' => 'fal fa-file-powerpoint',
     'items' => [
-        'demo1'      => [ 'title' => '데모 (1)', 'url' => '/?cfg=menuDemo&mN=demo1' ],
-        'demo2'      => [ 'title' => '데모 (2)', 'url' => '/?cfg=menuDemo&mN=demo2' ],
+        'demo1'      => [ 'title' => '데모 (1)', 'url' => '/?cfg=menuDemo&mN=demo1&mG=demo' ],
+        'demo2'      => [ 'title' => '데모 (2)', 'url' => '/?cfg=menuDemo&mN=demo2&mG=demo' ],
     ]
 ];
 
@@ -63,9 +63,9 @@ $_nav['menuEtc'] = [
 ];
 
 if ($_SESSION['mbr']['myTodo']) {
-    $_nav['menuEtc']['items']['myTodo'] = [ 'title' => 'my Todo', 'url' => '/?cfg=menuDashboard&mN=myTodo' ];
+    $_nav['menuEtc']['items']['myTodo'] = [ 'title' => 'my Todo', 'url' => '/?cfg=dashboard&mN=myTodo' ];
 }
-$_nav['menuEtc']['items']['calendar'] = [ 'title' => '업무일정(전체)', 'url' => '/?cfg=menuDashboard&mN=calendar' ];
+$_nav['menuEtc']['items']['calendar'] = [ 'title' => '업무일정(전체)', 'url' => '/?cfg=dashboard&mN=calendar' ];
 
 
 if (___isAdmin()) {

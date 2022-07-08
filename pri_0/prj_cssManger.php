@@ -10,6 +10,6 @@
 $cssChecker = $_site['cfg'].'.'.$_site['mN'];
 
 switch ($cssChecker) {
-case 'menuDashboard.dash_1':
+case 'dashboard.dash_1':
     break;
 }

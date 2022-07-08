@@ -9,4 +9,7 @@
 // 완전히 독립된 페이집니다.
 //___screenCenterMsg('HOME PAGE');
 // home 폴더 아래에 자유롭게 사이트를 작성할 수 있습니다.
-___screenCenterMsg('HOME PAGE 입니다. '.___hRef('관리자 페이지',['href'=>'/?cfg=menuDashboard']));
+$xMode = $_SESSION['xMode'] ?? '사용자';
+___echoExit(__LINE__);
+___debug('실행모드 : '.$xMode);
+___screenCenterMsg('HOME PAGE 입니다. '.___hRef('관리자 페이지',['href'=>'/?cfg=xA']));

@@ -14,8 +14,5 @@ const PRJ_LOGO_FILE_1 = MY_PRJ_ASSETS_URL.'/img/tonySign_e8e8e8.png';
 $_prj['logo'][0] = [ 'url'=>PRJ_LOGO_FILE , 'width'=>520, 'height'=>295 ];
 $_prj['logo'][1] = [ 'url'=>PRJ_LOGO_FILE_1 , 'width'=>520, 'height'=>295 ];
 
-$_prj['startMenu'] = 'menuDashboard';
-$_prj['startMenuItem'] = 'calendar';
-
 //___debug(MY_PRJ_ASSETS_URL);
 //___debug($_prj['logo'][0]);

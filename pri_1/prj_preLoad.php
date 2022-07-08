@@ -7,4 +7,4 @@
  */
 
 // index.php 단계에서 프로젝트에 필요판 파일들을 Load해 주세요.
-include_once MY_PRJ_CODE_PATH.'/rentManager/common/inc_baseFunc.php';
+require_once MY_PRJ_CODE_PATH.'/config/prj.config.inc_done.php';

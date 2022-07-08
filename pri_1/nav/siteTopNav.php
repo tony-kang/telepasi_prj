@@ -8,7 +8,7 @@
 //if (array_key_exists($_pg['schGroup'],___getSpecialScheduleArr())) {
 //    //양산일정 등의 특수 스케줄 보기
 //} else {
-//    $tMenu['menuDashboard.calendar'] = array(
+//    $tMenu['dashboard.calendar'] = array(
 //        'caption'=>'일정'
 //        ,'data' => array(
 //            'holidays'=>array('caption'=>'휴무자','child'=>''),
@@ -16,7 +16,7 @@
 //        )
 //    );
 //
-//    $tMenu['menuDashboard.calendar']['data']['project'] = ['caption'=>'프로젝트'];
+//    $tMenu['dashboard.calendar']['data']['project'] = ['caption'=>'프로젝트'];
 //}
 //
 ////---------------------------------------------------------------------------------
