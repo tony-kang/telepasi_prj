@@ -22,4 +22,4 @@ $sql->orderBy('T.dong ASC');
 $_listArr = $sql->getRows();
 
 //___debug($sql->getWhere());
-___debug($_listArr['q']);
+//___debug($_listArr['q']);

@@ -23,7 +23,7 @@ $_listArr = $sql->getRows();
 
 //___debug($sql->getWhere());
 //___debug($_listArr['q']);
-___printExeTime();
+//___printExeTime();
 
 /****
 공실 체크 ???

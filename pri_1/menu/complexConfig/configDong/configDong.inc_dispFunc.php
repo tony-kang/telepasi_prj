@@ -73,7 +73,9 @@ function ___tableComplexDong($dataArr,$p) {
         $mTable->tableTd($cDong['hoCnt']);
         $mTable->tableTd($cDong['hoFormat']);
 
-        $mTable->tableTd(number_format($hoCntAll),['align'=>'right','tail'=>' 개']);
+        if ($hoCntAll == 0) $mTable->tableTd('<my class="my-text-danger">정보 없음</my>',['align'=>'right']);
+        else                $mTable->tableTd(number_format($hoCntAll),['align'=>'right','tail'=>' 개']);
+
         $mTable->tableTd(___date($cDong['updateDate']));
         $mTable->tableTd($cDong['updateMbrName']);
         $mTable->tableTd(___date($cDong['regDate']));

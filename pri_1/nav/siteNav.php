@@ -21,6 +21,7 @@ $_nav['menuRent'] = [
     'items' => [
         'newContract'   => ['title' => '신규계약 세대', 'url' => '/?cfg=menuRent&mN=newContract&mG=complex'],
         'tbReContract'  => ['title' => '갱신예정 세대', 'url' => '/?cfg=menuRent&mN=tbReContract&mG=complex'],
+        'reContract'  => ['title' => '갱신 세대', 'url' => '/?cfg=menuRent&mN=reContract&mG=complex'],
         'tbMoveOut'     => ['title' => '퇴거예정 세대', 'url' => '/?cfg=menuRent&mN=tbMoveOut&mG=complex'],
         'living'        => ['title' => '입주 세대', 'url' => '/?cfg=menuRent&mN=living&mG=complex'],
         'moveComplete'  => ['title' => '퇴거 세대', 'url' => '/?cfg=menuRent&mN=moveComplete&mG=complex'],
