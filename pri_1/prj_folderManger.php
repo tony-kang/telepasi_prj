@@ -18,12 +18,16 @@ case 'dashboard':
 case 'complexConfig':
     $fo_1.= '/menu';
     break;
-case 'menuEnv':
-    $fo_2 = 'env';
-    break;
 default:
     if (substr($_site['cfg'],0,4) == 'menu') {
         $fo_1 .= '/menu';
     }
     break;
 }
+
+/*
+case 'menuEnv':
+    $fo_2 = 'env';
+    break;
+
+ */

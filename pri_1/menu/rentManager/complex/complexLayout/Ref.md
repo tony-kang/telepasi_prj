@@ -104,10 +104,11 @@ LEFT JOIN (
 ) B ON A.COMPX_CD = B.COMPX_CD AND A.CONTT_NO = B.CONTT_NO AND A.DONG_NO = B.DONG_NO AND A.HO_NO = B.HO_NO    
 
 having STA_NM != ''              
-     
+```
 
 
--- 동호 레이아웃 기본정보
+```php
+-- 연체세대
 -- _LATE.DLY_CNT : 연체 개월수
 -- _LATE.lateMonthFee : 마지막으로 연체료를 납부한 달까지의 연체료
 -- _LATE.totalLateFee : 특정날짜 까지의 최종 연체료 예> 2022년 7월 10일까지의 연체료는 아래와 같다. , 날짜를 입력하지 않으면 조회하는 당일 날짜까지의 연체료가 계산됨.
@@ -237,8 +238,9 @@ order by
 	cast(H.dong as signed) asc , 
 	cast(H.floor as signed) desc, 
 	cast(H.ho as signed) asc
+```
 
-
+```php
 -- 동호의 기본 정보
 select 
 	H.*
