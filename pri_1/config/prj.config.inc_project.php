@@ -35,7 +35,7 @@ const PHP_CALL_TRACE = false;               // 메인 컨텐츠 파일 호출 �
 const PHP_CSS_JS_TRACE = true;              // 메인 컨텐츠 파일 호출 순서 Trace 보기.
 const DEBUG_SRC_FILE_NAME = false;          // 메인 컨텐츠 파일 호출 PHP source filename 보기.
 const DEBUG_PHP_SRC_PATH = false;           // 메인 컨텐츠 PHP Src 파일이 결정되는 순서 및 정보 보기.
-const DEBUG_PRINT_EXECUTE_TIME = true;      // 메인 컨텐츠 처리 시간 표시
+const DEBUG_PRINT_EXECUTE_TIME = false;      // 메인 컨텐츠 처리 시간 표시
 //################################################################################################
 // 사이트 실행관련 셋팅
 //################################################################################################

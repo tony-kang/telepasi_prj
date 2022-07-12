@@ -13,3 +13,7 @@ const HO_STATE_IN_DONE = 3;         //입주완료
 const HO_STATE_OUT_READY = 11;      //퇴거예정
 const HO_STATE_OUT_ING = 12;        //퇴거중
 const HO_STATE_OUT_DONE = 13;       //퇴거완료(공실)
+
+
+const HO_TYPE_NORMAL = 0;
+const HO_TYPE_SHARE = 1;

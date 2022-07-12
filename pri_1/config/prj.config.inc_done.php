@@ -15,7 +15,7 @@ if (___loginState()) {
     if (empty($myData['COMPX_CD'])) {
         $myData['COMPX_CD'] = ___get('complex');
         if (empty($myData['COMPX_CD'])) {
-            $myData['COMPX_CD'] = 'C201900004';
+            $myData['COMPX_CD'] = 'C202000007'; //'C201900004';
         }
     }
 

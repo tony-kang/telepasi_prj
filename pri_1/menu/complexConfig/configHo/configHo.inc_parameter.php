@@ -16,3 +16,4 @@ $_pg['dongNo'] = ___getDecodeValue($_pg['dong']);   //rm_dong.no
 $_pg['ho'] = ___get('ho');      // encoded
 $_pg['hoNo'] = ___getDecodeValue($_pg['ho']);   //등번호 = rm_ho.no
 
+$_pg['sDongHo'] = ___get('sDongHo');

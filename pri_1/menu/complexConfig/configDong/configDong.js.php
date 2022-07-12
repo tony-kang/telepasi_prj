@@ -16,7 +16,7 @@ $('[data-obj-action="delete_complexDong"').on('click',function(e) {
 $('[data-obj-action="make_complexDongHoData"').on('click',function(e) {
     var dong = $(this).data('dong');
     var dongText = $(this).data('dong-text');
-    var c = confirm(dongText + '동의 호실정보를 자동생성 하시겠습니까?');
+    var c = confirm(dongText + '동의 호실정보를 최초생성 하시겠습니까?');
     if (!c) return;
 
     var sO = new Object();
@@ -24,6 +24,22 @@ $('[data-obj-action="make_complexDongHoData"').on('click',function(e) {
         sO.apiGroup = 'complex';
         sO.dong = dong;
         sO.cmd = 'make.dong.ho.data';
+
+    console.log(sO);
+    ___ajax('?cfg=api&api=api_complex',sO,true,null);
+});
+
+$('[data-obj-action="make_complexDongHoShareData"').on('click',function(e) {
+    var dong = $(this).data('dong');
+    var dongText = $(this).data('dong-text');
+    var c = confirm(dongText + '동의 쉐어정보를 확인(자동생성) 하시겠습니까?');
+    if (!c) return;
+
+    var sO = new Object();
+        sO.apiPrj = true;
+        sO.apiGroup = 'complex';
+        sO.dong = dong;
+        sO.cmd = 'make.dong.ho.share.data';
 
     console.log(sO);
     ___ajax('?cfg=api&api=api_complex',sO,true,null);

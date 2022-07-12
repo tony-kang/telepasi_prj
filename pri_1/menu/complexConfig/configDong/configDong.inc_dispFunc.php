@@ -60,6 +60,7 @@ function ___tableComplexDong($dataArr,$p) {
         $aMenu->add(true,___amData(['obj-action'=>"edit_complexDong", 'dong'=>$encDong],'수정'));
         $aMenu->add(($hoCntAll > 0),___amData(['obj-action'=>"delete_complexDongHoData", 'dong'=>$encDong, 'dong-text'=>$cDong['dong']],sprintf('%s동 %s 개 호실정보 삭제',$cDong['dong'],$hoCntAll)));
         $aMenu->add($if_make,___amData(['obj-action'=>"make_complexDongHoData", 'dong'=>$encDong, 'dong-text'=>$cDong['dong']],sprintf('%s동 호실 정보만들기',$cDong['dong'])));
+        $aMenu->add(($hoCntAll > 0),___amData(['obj-action'=>"make_complexDongHoShareData", 'dong'=>$encDong, 'dong-text'=>$cDong['dong']],sprintf('%s동 쉐어정보 만들기',$cDong['dong'])));
         $aMenu->add(($hoCntAll == 0),___amData(['obj-action'=>"delete_complexDong", 'dong'=>$encDong],'삭제'));
         $actionMenu = $aMenu->html();
 

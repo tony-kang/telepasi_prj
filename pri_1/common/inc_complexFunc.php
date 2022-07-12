@@ -9,7 +9,7 @@
 /*
  * common 폴더에 파일츨 추가하면 자동으로 include_once 처리됩니다.
  */
-function _roomTypeArr($rT) {
+function _supTypeArr($rT) {
     $arr = array(1=>'일반'
         ,2=>'특별-구로구/금천구 중소기업 종사자'
         ,3=>'특별-3대(代)동반입주'
@@ -19,9 +19,14 @@ function _roomTypeArr($rT) {
         ,7=>'특별-세어형태' // 서교동
         );
 
-    $r = $arr[$rT];
-    if (empty($r)) return '일반';
+    $r = $arr[$rT] ?? '일반';
+    return $r;
+}
 
+function _hoTypeArr($rT) {
+    $arr = ___envArr('M003','env_rm.txt');
+
+    $r = $arr[$rT] ?? '일반';
     return $r;
 }
 
@@ -36,9 +41,7 @@ function ___hoHouseState($state) {
         ,HO_STATE_OUT_DONE=>'퇴거완료(공실)'
     );
 
-    $r = $arr[$state];
-    if (empty($r)) return '입주중(추정)';
-
+    $r = $arr[$rT] ?? '입주중(추정)';
     return $r;
 }
 
@@ -57,9 +60,6 @@ function ___hoWorkState($state) {
         ,15=>'갱신잔금입금완료'
         );
 
-    $r = $arr[$state];
-    if (empty($r)) return '진행업무 없음(추정)';
-
+    $r = $arr[$rT] ?? '진행업무 없음(추정)';
     return $r;
-
 }

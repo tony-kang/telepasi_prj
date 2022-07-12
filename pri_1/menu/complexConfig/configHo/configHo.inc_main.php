@@ -26,3 +26,6 @@ $sBtnList = new MySearchBtn();
 
 //----------------------------------------------------------------------------------------------------------------
 $sFieldList = new MySearchField();
+$sFieldList->newField('input','sDongHo','동 호',90)->add();
+$_searchArr = $sFieldList->make();
+//___print($_searchArr);

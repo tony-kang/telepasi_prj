@@ -1,0 +1,71 @@
+.dongLayout {
+    display:inline-block;
+    margin:20px;
+    vertical-align: bottom;
+}
+
+.floorLayout {
+    width:100%;
+    display: flex;
+}
+
+.ho-text {
+    font-size:10px;
+}
+
+.ho-in-ready {
+    background-color:#707;
+    color:#fff;
+}
+
+.ho-overdue-3 {
+    background-color:#770;
+    border:solid 1px #aaa;
+    color:#fff;
+}
+
+.ho-overdue-2 {
+    background-color:#aa0;
+    border:solid 1px #aaa;
+    color:#fff;
+}
+
+.ho-overdue-1 {
+    background-color:#ee0;
+    border:solid 1px #aaa;
+}
+
+.ho-not-use {
+    border:solid 1px #aaa;
+    background-color:#ddd;
+}
+
+.ho-empty {
+    background-color:#f00;
+    border:solid 1px #aaa;
+    color:#fff;
+}
+
+.ho-shared {
+    background-color:cyan;
+    border:solid 1px #aaa;
+    color:#000;
+}
+
+.color-box {
+    width: 30px;
+    height: 10px;
+    display:inline-block;
+    margin-left:5px;
+}
+.complex-desc-text {
+    font-size:12px;
+    display:inline-block;
+    margin-top:0px;
+}
+.complex-desc-box {
+    display:inline-block;
+    margin-right:35px;
+    vertical-align: middle;
+    float:right;
+}

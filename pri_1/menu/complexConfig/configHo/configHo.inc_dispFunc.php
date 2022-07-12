@@ -11,7 +11,8 @@ function ___tableComplexDongHo($_listArr,$p) {
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'시설명'   ,'width'=>150],
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'상태'   ,'width'=>100],
 
-        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'유형'   ,'width'=>100],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'유형'   ,'width'=>60],
+        [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'형태'   ,'width'=>60],
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'공급타입'   ,'width'=>100],
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'계약번호'   ,'width'=>100],
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'계약일'   ,'width'=>100],
@@ -44,7 +45,8 @@ function ___tableComplexDongHo($_listArr,$p) {
         $actionMenu = $aMenu->html();
 
         $dongHoState = ___hoState($ho['state']);
-        $supType = _roomTypeArr($rentHouse['SUP_TYPE']);
+        $supType = _supTypeArr($ho['SUP_TYPE']);
+        $hoType = _hoTypeArr($ho['hoType']);
 
         $mTable->tableTrStart();    //'bg-fusion-500'
         $mTable->tableTd($ho['no']);
@@ -57,6 +59,7 @@ function ___tableComplexDongHo($_listArr,$p) {
 
         $mTable->tableTd($ho['ROOM_TP']);
         $mTable->tableTd($supType);
+        $mTable->tableTd($hoType);
         $mTable->tableTd($ho['CONTT_NO']);
         $mTable->tableTd(___date($ho['CONTT_YMD']));
         $mTable->tableTd(number_format($ho['LEAS_DPST_AMT']),['align'=>'right']);
