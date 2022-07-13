@@ -63,3 +63,9 @@ function ___hoWorkState($state) {
     $r = $arr[$rT] ?? '진행업무 없음(추정)';
     return $r;
 }
+
+function ___hoInfo($hoNo) {
+    $sql = sql_getDbData(S_DB,'rm_ho','*','no='.$hoNo);
+    $sql['dongHo'] = sprintf('%d동 %d호',$sql['dong'],$sql['ho']);
+    return $sql;
+}

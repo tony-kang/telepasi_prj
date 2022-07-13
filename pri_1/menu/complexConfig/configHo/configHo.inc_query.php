@@ -27,4 +27,4 @@ $sql->orderBy('CAST(T.floor AS SIGNED) DESC, CAST(T.ho AS SIGNED) ASC');
 $_listArr = $sql->getRows();
 
 //___debug($sql->getWhere());
-___debug($_listArr['q']);
+//___debug($_listArr['q']);

@@ -17,3 +17,5 @@ const HO_STATE_OUT_DONE = 13;       //퇴거완료(공실)
 
 const HO_TYPE_NORMAL = 0;
 const HO_TYPE_SHARE = 1;
+
+const HO_STATE_NONE_TEXT = '[?]';

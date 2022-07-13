@@ -93,13 +93,7 @@ let ComplexLayout = class {
         if (inReady !== undefined) {
             hoClass += ' ho-in-ready';
         } else if (overDue !== undefined) {
-            if (overDue['dMonth'] >= 3) {
-                hoClass += ' ho-overdue-3';
-            } else if (overDue['dMonth'] == 2) {
-                hoClass += ' ho-overdue-2';
-            } else {
-                hoClass += ' ho-overdue-1';
-            }
+            hoClass += ' ho-overdue-'+overDue['dMonth'];
         } else if (isEmpty) {
             hoClass += ' ho-empty';
         } else if (!inUse && ho['floor'] <= this.#g_rentBaseFloor) {
@@ -123,7 +117,8 @@ let ComplexLayout = class {
         //}
 
         var $html = '<div';
-            $html += ' class="%s %s my-inline-block ho-text text-center"'.format(nickClass,hoClass);
+            $html += ' data-obj-action="view_hoDetail" data-ho-no="%s"'.format(ho['no']);
+            $html += ' class="%s %s my-inline-block ho-text text-center my-cursor-pointer"'.format(nickClass,hoClass);
             $html += ' title="[%s] [공급:%s ㎡ ,전용:%s ㎡]"'.format(roomType,supArea,exArea);
             $html += ' style="height:%spx; margin-right:-1px; width:%spx; max-width:%spx; %s %s"'.format(h,w,w,hoLineColor,hoForeColor);
             $html += '>';
@@ -133,6 +128,14 @@ let ComplexLayout = class {
         return $html;
     }
 }
+
+/***
+ *  ho 클릭 동적 이벤트 처리
+ */
+$(document).on('click','[data-obj-action="view_hoDetail"]',function(e) {
+    var hoNo = $(this).data('ho-no');
+    ___popupWindow('/?cfg=popup&popup=prj&f=complexWork&v=hoDetail&hoNo='+hoNo,1000,800);
+});
 
 $(document).ready(function () {
     let start = new Date();  // 시작
