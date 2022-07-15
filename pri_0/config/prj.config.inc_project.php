@@ -24,21 +24,11 @@ const MY_PRJ_TITLE = 'Test Project';
 const MENU_TOP_TEXT_1 = 'Telepasi Framework';
 const MENU_TOP_TEXT_2 = '007';
 
-
-//################################################################################################
-// 사이트 디버깅 관련 셋팅
-//################################################################################################
-const DEBUG_ENABLE = true;                  // Debug On
-const VIEW_PRJ_GLOBAL_VARIABLE = false;     // index.php 수행단계에서 정의된 글로벌 변수 및 상수 보기
-const HEADER_AREA_DEBUG = false;            // 컨텐츠 메인창에 Debug 영역 확보
-const PHP_CALL_TRACE = false;               // 메인 컨텐츠 파일 호출 순서 Trace 보기.
-const PHP_CSS_JS_TRACE = true;              // 메인 컨텐츠 파일 호출 순서 Trace 보기.
-const DEBUG_SRC_FILE_NAME = false;          // 메인 컨텐츠 파일 호출 PHP source filename 보기.
-const DEBUG_PHP_SRC_PATH = false;           // 메인 컨텐츠 PHP Src 파일이 결정되는 순서 및 정보 보기.
-const DEBUG_PRINT_EXECUTE_TIME = true;      // 메인 컨텐츠 처리 시간 표시
 //################################################################################################
 // 사이트 실행관련 셋팅
 //################################################################################################
+___dbConst('debug');
+
 // 시스템 점검 또는 사이트 이동 안내등...
 // SYS_NORMAL   : 정상동작
 // SYS_REDIRECT : 사이트 이동(이전) 안내
@@ -54,9 +44,6 @@ const HAS_ATTENDANCE_MENU = true;           // true : 근태관리 나오게 ,  
 const PRJ_START_MENU = 'dashboard';         // 사이트 시작메뉴
 const PRJ_START_MENU_GROUP = 'calendar';    // 사이트 시작메뉴 그룹
 const PRJ_START_MENU_ITEM = 'calendar';     // 사이트 시작메뉴
-
-// 세션 유지 시간
-const PRJ_SESSION_TIME = 604800;            // 세션유지시간 = 3600초 = 1시간 , 604800 = 7일
 
 //구글 통계 관련 셋팅
 const HAS_GOOGLE_ANALYTICS = false;
