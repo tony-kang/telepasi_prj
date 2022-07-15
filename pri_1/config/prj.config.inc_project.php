@@ -24,12 +24,6 @@ const MY_PRJ_TITLE = 'ODN-RentManager';
 const MENU_TOP_TEXT_1 = '임대관리';
 const MENU_TOP_TEXT_2 = 'Rent Manager';
 
-
-//################################################################################################
-// 사이트 실행관련 셋팅
-//################################################################################################
-___dbConst('debug');
-
 // 시스템 점검 또는 사이트 이동 안내등...
 // SYS_NORMAL   : 정상동작
 // SYS_REDIRECT : 사이트 이동(이전) 안내
@@ -46,31 +40,16 @@ const PRJ_START_MENU = 'dashboard';             // 사이트 시작메뉴
 const PRJ_START_MENU_GROUP = 'calendar';        // 사이트 시작메뉴 그룹
 const PRJ_START_MENU_ITEM = 'calendar';         // 사이트 시작메뉴
 
-// 세션 유지 시간
-const PRJ_SESSION_TIME = 604800;            // 세션유지시간 = 3600초 = 1시간 , 604800 = 7일
-
 //구글 통계 관련 셋팅
 const HAS_GOOGLE_ANALYTICS = false;
 const PRJ_GOOGLE_ANALYTICS_ID = '';
 
 //################################################################################################
-// 기능관련 셋팅(
+// 사이트 실행관련 셋팅
 //################################################################################################
-const HAS_ATTENDANCE_MENU = true;   //근태관리
-
+___dbConst('debug');
 
 //################################################################################################
-// 기능관련 셋팅(전자결재)
+// 기능관련 셋팅
 //################################################################################################
-//결재 차례가 오지 않은 경우 리스트에서 보여줄지 말지를 처리
-//  true : 자기차례가 된 결재만 보임.
-// false : 자기차례가 되지 않은 결재는 보이지 않음.
-const APPROVAL_VIEW_ONLY_MY_TURN = true;
-
-//  true : 배지 나오게
-// false : 배지 안나오게
-const APPROVAL_VIEW_BADGE = true;
-const APPROVAL_COUNT_MY_START_CONFIRM_ZERO = true;  //상신결재 카운트는 표시하지 않음.
-const APPROVAL_COUNT_MY_CONFIRM_OK_ZERO = true;     //결재완료 카운트는 표시하지 않음.
-const APPROVAL_COUNT_MY_CONFIRM_DONE_ZERO = true;   //최종(승인/반려) 카운트는 표시하지 않음.
-const APPROVAL_COUNT_MY_START_TEMP_SAVE_ZERO = true; //임시저장함 카운트는 표시하지 않음.
+___dbConst('feature',0);
