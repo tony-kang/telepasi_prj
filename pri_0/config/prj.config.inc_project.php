@@ -24,16 +24,15 @@ const MY_PRJ_TITLE = 'Test Project';
 const MENU_TOP_TEXT_1 = 'Telepasi Framework';
 const MENU_TOP_TEXT_2 = '007';
 
-// 시스템 점검 또는 사이트 이동 안내등...
-// SYS_NORMAL   : 정상동작
-// SYS_REDIRECT : 사이트 이동(이전) 안내
-// SYS_CHECK    : 사이트 점검중 안내
-const SYS_ACTIVATION = SYS_NORMAL;
+//// 시스템 점검 또는 사이트 이동 안내등...
+//// SYS_NORMAL   : 정상동작
+//// SYS_REDIRECT : 사이트 이동(이전) 안내
+//// SYS_CHECK    : 사이트 점검중 안내
+//const SYS_ACTIVATION = SYS_NORMAL;
 
-// 기능 활성과 관련
-const HAS_LOGOUT_ALERT = true;              // 로그아웃시 컨펌 Alert 사용
-const HAS_USER_HOME = true;                 // true : home page를 띄움 , false login page를 띄움 PRJ_START_MENU는 무시됨.
-const HAS_ATTENDANCE_MENU = true;           // true : 근태관리 나오게 ,  false : 근태관리 안나오게
+//// 기능 활성과 관련
+//const HAS_LOGOUT_ALERT = true;              // 로그아웃시 컨펌 Alert 사용
+//const HAS_USER_HOME = true;                 // true : home page를 띄움 , false login page를 띄움 PRJ_START_MENU는 무시됨.
 
 // 사이트 동작관련
 const PRJ_START_MENU = 'dashboard';         // 사이트 시작메뉴
