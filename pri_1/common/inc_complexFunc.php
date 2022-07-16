@@ -24,7 +24,7 @@ function _supTypeArr($rT) {
 }
 
 function _hoTypeArr($rT) {
-    $arr = ___envArr('M003','env_rm.txt');
+    $arr = ___envArr('M003','env_prj.txt');
 
     $r = $arr[$rT] ?? '일반';
     return $r;

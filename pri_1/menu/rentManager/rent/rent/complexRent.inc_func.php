@@ -7,7 +7,7 @@
  */
 
 function ___hoState($state) {
-    $hoStateArr = ___envArr('M002','env_rm.txt','colorClass');
+    $hoStateArr = ___envArr('M002','env_prj.txt','colorClass');
 
     return $hoStateArr[$state];
 }

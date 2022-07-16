@@ -4,12 +4,12 @@ $editRow = new MyDbEditRow();
 // Row 1
 $editRow->newColumn()->size('col-2')->dbTable(TEXT_FIELD,'data_1')->type(ET_INPUT)->label('입력 1')->required(true)->note('일반입력(필수)')->addCol();
 $editRow->newColumn()->size('col-2')->dbTable(TEXT_FIELD,'data_2')->type(ET_INPUT)->label('입력 2')->disabled(true)->note('일반입력(Disable)')->addCol();
-$editRow->newColumn()->size('col-2')->dbTable(TEXT_FIELD,'data_3')->type(ET_SELECT)->label('선택(Selector)')->addCol(___envArr('X009','env_prj.txt'));
-$editRow->newColumn()->size('col-6')->dbTable(TEXT_FIELD,'data_4')->type(ET_RADIO)->label('선택(Radio)')->addCol(___envArr('X009','env_prj.txt'));
+$editRow->newColumn()->size('col-2')->dbTable(TEXT_FIELD,'data_3')->type(ET_SELECT)->label('선택(Selector)')->addCol(___envArr('X009','env_demo.txt'));
+$editRow->newColumn()->size('col-6')->dbTable(TEXT_FIELD,'data_4')->type(ET_RADIO)->label('선택(Radio)')->addCol(___envArr('X009','env_demo.txt'));
 $editRow->addRow()->hr();   //아래쪽에 구분선 출력
 
 // Row 2
-$editRow->newColumn()->size('col-6')->dbTable(TEXT_FIELD,'data_5')->type(ET_CHECKBOX)->label('선택(Checkbox)')->addCol(___envArr('X006','env_prj.txt'));
+$editRow->newColumn()->size('col-6')->dbTable(TEXT_FIELD,'data_5')->type(ET_CHECKBOX)->label('선택(Checkbox)')->addCol(___envArr('X006','env_demo.txt'));
 $editRow->newColumn()->size('col-2')->dbTable(TEXT_FIELD,'data_6')->type(ET_NUMBER)->label('숫자(5~20')->minMax(5,20)->default(10)->alignRight()->addCol();
 $editRow->newColumn()->size('col-2')->dbTable(DATE_FIELD,'data_7')->type(ET_INPUT)->label('날짜')->alignCenter()->addCol();
 $editRow->newColumn()->size('col-2')->dbTable(TIME_FIELD,'data_8')->type(ET_INPUT)->label('시간')->alignCenter()->addCol();
@@ -17,7 +17,7 @@ $editRow->addRow()->hr();
 
 // Row 3
 $editRow->newColumn()->size('col-2')->dbTable(TEXT_FIELD,'data_9')->type(ET_COLOR_PICKER)->label('칼라')->addCol();
-$editRow->newColumn()->size('col-4')->dbTable(TEXT_FIELD,'data_10')->type(ET_STEPS)->label('진행상태(Step)')->addCol(___envArr('X011','env_prj.txt'));
+$editRow->newColumn()->size('col-4')->dbTable(TEXT_FIELD,'data_10')->type(ET_STEPS)->label('진행상태(Step)')->addCol(___envArr('X011','env_demo.txt'));
 $editRow->newColumn()->size('col-6')->dbTable(TEXT_FIELD,'data_11')->type(ET_TEXTAREA)->label('메모')->height(100)->placeHolder('내용을 입력하세요')->addCol();
 $editRow->addRow()->hr();
 

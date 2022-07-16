@@ -4,8 +4,8 @@ $editRow = new MyDbEditRow();
 // Row 1
 $editRow->newColumn()->size('col-2')->dbTable(TEXT_FIELD,'data_1')->type(ET_INPUT)->label('입력 1')->required(true)->note('일반입력(필수)')->addCol();
 $editRow->newColumn()->size('col-2')->dbTable(TEXT_FIELD,'data_2')->type(ET_INPUT)->label('입력 2')->disabled(true)->note('일반입력(Disable)')->addCol();
-$editRow->newColumn()->size('col-2')->dbTable(TEXT_FIELD,'data_3')->type(ET_SELECT)->label('선택(Selector)')->addCol(___envArr('X009','env_prj.txt'));
-$editRow->newColumn()->size('col-6')->dbTable(TEXT_FIELD,'data_4')->type(ET_RADIO)->label('선택(Radio)')->addCol(___envArr('X009','env_prj.txt'));
+$editRow->newColumn()->size('col-2')->dbTable(TEXT_FIELD,'data_3')->type(ET_SELECT)->label('선택(Selector)')->addCol(___envArr('X009','env_demo.txt'));
+$editRow->newColumn()->size('col-6')->dbTable(TEXT_FIELD,'data_4')->type(ET_RADIO)->label('선택(Radio)')->addCol(___envArr('X009','env_demo.txt'));
 $editRow->addRow()->hr();
 
 
