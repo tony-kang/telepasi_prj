@@ -6,7 +6,7 @@
  *
  * @return string
  */
-function ___tableSurveyList($_listArr,$p) {
+function ___tableSurveyList($listArr,$p) {
     $_colArr[0] = [
         /* 헤더 기준 칼럼  */
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'#'  ,'width'=>40],
@@ -19,14 +19,14 @@ function ___tableSurveyList($_listArr,$p) {
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'Action'  ,'width'=>30]
     ];
 
-    $mTable = new MyTable('',$_listArr,$_colArr);
+    $mTable = new MyTable('',$listArr,$_colArr);
     $mTable->tableStart();
     $mTable->tableHeadStartEnd();
     $mTable->tableBodyStart();
 
     //--------------------------------------
     $i = 1;
-    foreach($_listArr['pageData'] as $d) {
+    foreach($listArr['pageData'] as $d) {
         // 자유롭게 코딩가능한 영역입니다.
 
         //-----------------------------------------------------------------------------

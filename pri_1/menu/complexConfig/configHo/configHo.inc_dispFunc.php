@@ -1,6 +1,6 @@
 <?php
 
-function ___tableComplexDongHo($_listArr,$p) {
+function ___tableComplexDongHo($listArr,$p) {
     $_colArr[0] = [
          /* 헤더 기준 칼럼  */
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'#'  ,'width'=>40],
@@ -28,14 +28,14 @@ function ___tableComplexDongHo($_listArr,$p) {
         [ 'if'=>true    ,'align'=>'C'   ,'caption'=>'등록자'   ,'width'=>50],
     ];
 
-    $mTable = new MyTable('',$_listArr,$_colArr);
+    $mTable = new MyTable('',$listArr,$_colArr);
     $mTable->tableStart();
     $mTable->tableHeadStartEnd();
     $mTable->tableBodyStart();
 
     //--------------------------------------
     $i = 1;
-    foreach($_listArr['pageData'] as $ho) {
+    foreach($listArr['pageData'] as $ho) {
         // 자유롭게 코딩가능한 영역입니다.
 
         $encHo = ___makeEncode($ho['no']);

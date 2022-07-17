@@ -26,7 +26,7 @@ $sBtnList = new MySearchBtn();
 $sBtnList->newBtn('설문 등록')->btn('btn-success')->action('edit_newSurvey')->add();
 
 //엑셀저장 버턴이 필요한 경우
-//$_excelDialog = ___excelDialog('id_saveExcel','env_m11.txt','X020','env_excelData.txt');
+//$_excelDialog = ___excelDialog('id_saveExcel','env_prj.txt','X020','env_excelData.txt');
 //$sBtnList->newBtn('엑셀로 저장','fas fa-file-excel')->btn('btn-primary')->modal($_excelDialog['id'])->add();
 $_btnArr = $sBtnList->make();
 //___print($_btnArr);

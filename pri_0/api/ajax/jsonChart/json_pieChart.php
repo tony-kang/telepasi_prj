@@ -82,7 +82,7 @@ function _chartSalesProductCate_3($sO) {
 
     ___log($logHandle,$sql['q']);
 
-    $cate_3Arr = ___envArr('X052','env_m11.txt');
+    $cate_3Arr = ___envArr('X052','env_prj.txt');
     $jsonArr = [['지역별','매출']];  //,'수량'
     if ($sql['dataCnt']) {
         $jsonArr['result'] = 'OK';
