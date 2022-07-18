@@ -26,7 +26,7 @@ $_editDb['puField'] = 'no';
 $_editDb['puType'] = NUMBER_FIELD;
 $_editDb['getPara'] = 'ho';
 $_editDb['formId'] = 'id_dbComplexDong';
-$_editDb['iudField'] = [ 'insert'=>'mbrUid | regDate' ,'update'=>'updateMbr | updateDate' ,'delete'=>'deleted | deleteMbr | deleteDate' ]; //
+$_editDb['iudField'] = [ 'insert'=>'regMbr | regDate' ,'update'=>'updateMbr | updateDate' ,'delete'=>'deleted | deleteMbr | deleteDate' ]; //
 $_editDb['saveCallback'] = 'hoSaveCallback';
 
 //----------------------------------------------------------------------------------------------------------------

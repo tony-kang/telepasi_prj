@@ -28,7 +28,7 @@ foreach($ipList as $ipData) {
         $mbr = db_getDbData(S_DB,'t_mbrdata','*','providerKey="'.$custProviderKey.'"');
         $mbrUId = $mbr['uid'];
     }
-    $iField = 'mbrUid,providerKey';
+    $iField = 'regMbr,providerKey';
     $iValue = sprintf('%s,"%s.%s.%d"',$mbrUId,$custProviderKey,$ipData['s0@@ipGroup'],$ipData['n0@@providerIpNo']);
     foreach($ipData as $fN => $value) {
         if ($iField) { $iField .= ',';  $iValue .= ','; }

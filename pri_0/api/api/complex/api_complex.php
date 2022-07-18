@@ -26,7 +26,7 @@ function _makeDongHoData($sO) {
             $iField .= ',floor';        $iValue .= sprintf(', %d',$floor);
             $iField .= ',dong';         $iValue .= sprintf(',"%s"',$cDong['dong']);
             $iField .= ',ho';           $iValue .= sprintf(',"%s"',$hoName);
-            $iField .= ',mbrUid';       $iValue .= sprintf(', %d',$loginUid);
+            $iField .= ',regMbr';       $iValue .= sprintf(', %d',$loginUid);
             $iField .= ',regDate';      $iValue .= sprintf(',"%s"',$now);
             $sql = db_insertDbData(S_DB,'rm_ho',$iField,$iValue);
             ___log($logHandle,$sql['q']);

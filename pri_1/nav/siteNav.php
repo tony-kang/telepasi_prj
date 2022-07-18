@@ -117,8 +117,8 @@ if (___isAdmin()) {
         'icon' => 'fal fa-flag-checkered',
         'items' => [
             'template'          => [ 'title' => 'HTML 템플리트'     , 'url' => '/?cfg=adminMenu&mN=template&mG=template' ],
-            'user'              => [ 'title' => '사용자'       , 'url' => '/?cfg=menuEnv&mN=user' ],
-            'part'            => [ 'title' => '조직(부서)'    , 'url' => '/?cfg=menuEnv&mN=part' ],
+            'user'              => [ 'title' => '사용자'       , 'url' => '/?cfg=adminMenu&mN=user&mG=user' ],
+            'part'            => [ 'title' => '조직(부서)'    , 'url' => '/?cfg=adminMenu&mN=part&mG=user' ],
         ]
     ];
 }

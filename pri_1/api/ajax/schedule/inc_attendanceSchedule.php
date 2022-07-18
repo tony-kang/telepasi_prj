@@ -45,7 +45,7 @@ foreach($_listArr['pageData'] as $data) {
     $url = $data['url'] ?? '';
     $schCode = $data['inOutType'] ?? '';
     $_hasEditMenu = 0;
-    $_hasDeleteMenu = 0;//($data['mbrUid'] == 0 || $data['mbrUid'] == $_SESSION['mbrUid']) ? 1 : 0;
+    $_hasDeleteMenu = 0;
 
     $_fColor = '';
     $_bColor = '#'.$inOutTypeColorArr[$data['inOutType']];

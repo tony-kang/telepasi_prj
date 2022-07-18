@@ -14,7 +14,7 @@ $_editDb['puField'] = 'COMPX_CD';
 $_editDb['puType'] = STRING_FIELD;
 $_editDb['getPara'] = 'complex';
 $_editDb['formId'] = 'id_dbComplex';
-$_editDb['iudField'] = [ ]; //'insert'=>'mbrUid | regDate' ,'update'=>'updateMbr | updateDate' ,'delete'=>'deleted | deleteMbr | deleteDate'
+$_editDb['iudField'] = [ ]; //'insert'=>'regMbr | regDate' ,'update'=>'updateMbr | updateDate' ,'delete'=>'deleted | deleteMbr | deleteDate'
 //----------------------------------------------------------------------------------------------------------------
 $_pg['colArr'] = $_colArr = [
     [ 'caption'=>'Action', 'align'=>'center', 'width'=>50 ],
