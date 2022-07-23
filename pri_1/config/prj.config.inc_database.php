@@ -6,10 +6,8 @@
  *
  */
 
-const PRJ_DB_HOST = '211.253.27.169';
-const PRJ_DB_USER = 'root';
-const PRJ_DB_PASSWORD = 'thfxmelql!';
-const PRJ_DB_DATABASE = 'odnRentManager';
-const PRJ_DB_PORT = '19306';
-
-const PRJ_DB_DESC = 'DEV_REMOTE';   //개발_원격디비서버
+//도메인 및 개발이냐 실제 서비냐에 따른 데이타베이스 연결을 구성
+if ($_site['domain'] == 'odn.telepasi.co.kr') {
+    if (PRJ_SERVER_DESC == REAL_SERVER) include_once __DIR__.'/inc_dbRealService.php';
+    else include_once __DIR__.'/inc_dbDev.php';
+}
