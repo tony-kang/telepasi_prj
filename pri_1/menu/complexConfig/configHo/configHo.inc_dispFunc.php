@@ -45,8 +45,8 @@ function ___tableComplexDongHo($listArr,$p) {
         $actionMenu = $aMenu->html();
 
         $dongHoState = ___hoState($ho['state']);
-        $supType = _supTypeArr($ho['SUP_TYPE']);
-        $hoType = _hoTypeArr($ho['hoType']);
+        $supType = ___supTypeArr($ho['SUP_TYPE']);
+        $hoType = ___hoTypeArr($ho['hoType']);
 
         $mTable->tableTrStart();    //'bg-fusion-500'
         $mTable->tableTd($ho['no']);

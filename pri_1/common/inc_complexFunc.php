@@ -9,7 +9,7 @@
 /*
  * common 폴더에 파일츨 추가하면 자동으로 include_once 처리됩니다.
  */
-function _supTypeArr($rT) {
+function ___supTypeArr($rT) {
     $arr = array(1=>'일반'
         ,2=>'특별-구로구/금천구 중소기업 종사자'
         ,3=>'특별-3대(代)동반입주'
@@ -23,8 +23,8 @@ function _supTypeArr($rT) {
     return $r;
 }
 
-function _hoTypeArr($rT) {
-    $arr = ___envArr('M003','env_prj.txt');
+function ___hoTypeArr($rT) {
+    $arr = ___envArr('M003',EF_SEL_1);
 
     $r = $arr[$rT] ?? '일반';
     return $r;
@@ -68,4 +68,10 @@ function ___hoInfo($hoNo) {
     $sql = sql_getDbData(S_DB,'rm_ho','*','no='.$hoNo);
     $sql['dongHo'] = sprintf('%d동 %d호',$sql['dong'],$sql['ho']);
     return $sql;
+}
+
+function ___hoState($state) {
+    $hoStateArr = ___envArr('M002',EF_SEL_1,'colorClass');
+
+    return $hoStateArr[$state];
 }

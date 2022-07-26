@@ -122,14 +122,3 @@ if (___isAdmin()) {
         ]
     ];
 }
-
-if (___isDeveloper()) {
-    $_nav['menuDemo'] = [
-        'title' => '데모',
-        'icon' => 'fal fa-file-powerpoint',
-        'items' => [
-            'demo1' => ['title' => '데모 (1)', 'url' => '/?cfg=menuDemo&mN=demo1&mG=demo'],
-            'demo2' => ['title' => '데모 (2)', 'url' => '/?cfg=menuDemo&mN=demo2&mG=demo'],
-        ]
-    ];
-}

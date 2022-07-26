@@ -44,7 +44,7 @@ function ___tableListDemo1($listArr,$p) {
 
     //--------------------------------------
     $i = 1;
-    $d5Arr = ___envArr('X006','env_demo.txt');
+    $d5Arr = ___envArr('X006',EF_SEL_1);
     $d15Arr = ___calendarGroupArr();
 
     foreach($listArr['pageData'] as $d) {
