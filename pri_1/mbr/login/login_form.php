@@ -16,10 +16,12 @@
                             */ ?>
                         </a>
                     </div>
-                    <a class="btn-link text-white ml-auto"><?= MY_PRJ_TITLE ?></a>
+                    <a class="btn-link text-white ml-auto pt-2 fs-20"><?= MY_PRJ_TITLE ?></a>
+                    <?php if (HAS_JOIN) :?>
                     <a href="/?cfg=join" class="btn-link text-white ml-auto">
                         Create Account
                     </a>
+                    <?php endif ?>
                 </div>
             </div>
             <div class="flex-1" style="background: url(<?= ASSETS_URL ?>/img/svg/pattern-1.svg) no-repeat center bottom fixed; background-size: cover;">

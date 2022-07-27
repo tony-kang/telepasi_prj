@@ -1,7 +1,7 @@
 <?php
-    $loginLogo = $_prj['logo'][0];
-    $loginLogo_h = 48;
-    $loginLogo_w = $loginLogo_h * ($loginLogo['width']/$loginLogo['height']);
+$loginLogo = $_prj['logo'][0];
+$loginLogo_h = 48;
+$loginLogo_w = $loginLogo_h * ($loginLogo['width']/$loginLogo['height']);
 ?>
 <div class="page-wrapper auth">
     <div class="page-inner bg-brand-gradient">
@@ -16,10 +16,12 @@
                             */ ?>
                         </a>
                     </div>
-                    <a class="btn-link text-white ml-auto"><?= MY_PRJ_TITLE ?></a>
-                    <a href="/?cfg=join" class="btn-link text-white ml-auto">
-                        Create Account
-                    </a>
+                    <a class="btn-link text-white ml-auto pt-2 fs-20"><?= MY_PRJ_TITLE ?></a>
+                    <?php if (HAS_JOIN) :?>
+                        <a href="/?cfg=join" class="btn-link text-white ml-auto">
+                            Create Account
+                        </a>
+                    <?php endif ?>
                 </div>
             </div>
             <div class="flex-1" style="background: url(<?= ASSETS_URL ?>/img/svg/pattern-1.svg) no-repeat center bottom fixed; background-size: cover;">
@@ -65,15 +67,15 @@
                             <?php endif ?>
                             <div class="card p-4 rounded-plus bg-faded">
                                 <form id="js-login" novalidate="" action=""
-                                      <?php
-                                        /* data-action 이름을 바꿈. app.bundle.js에서 data-action을 사용중 -- 모바일에서 클릭 문제 발생
-                                        main.php , src/action/action_main.php 등의 소스 수정해야 함. */
-                                      ?>
+                                    <?php
+                                    /* data-action 이름을 바꿈. app.bundle.js에서 data-action을 사용중 -- 모바일에서 클릭 문제 발생
+                                    main.php , src/action/action_main.php 등의 소스 수정해야 함. */
+                                    ?>
                                       data-actionID="login"
                                       data-referer="<?php echo ___getReferenceUrl(); ?>"
                                       data-start="<?= '/?cfg='.PRJ_START_MENU.'&mN='.PRJ_START_MENU_ITEM.'&mG='.PRJ_START_MENU_GROUP ?>"
                                       data-ssID="<?php echo session_id(); ?>"
-                                      >
+                                >
                                     <div class="form-group">
                                         <label class="form-label" for="username">Username</label>
                                         <input type="text" id="username" class="form-control form-control-lg" placeholder="your ID or Email" required>
