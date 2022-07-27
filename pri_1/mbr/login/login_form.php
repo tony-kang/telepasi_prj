@@ -29,7 +29,7 @@
                             <h2 class="fs-xxl fw-500 mt-4 text-white">
                                 <my style="color:red;">Ondongne</my> Rent Manager
                                 <small class="h3 fw-300 mt-3 mb-5 text-white opacity-60">
-                                    온동네 임대관리
+                                    <?= PRJ_NAME ?>
                                 </small>
                             </h2>
                             <a href="#" class="fs-lg fw-500 text-white opacity-70" data-obj-action="view_idList">Learn more &gt;&gt;</a>
