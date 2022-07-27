@@ -5,8 +5,6 @@
  * Description
  *
  */
-___debug(__FILE__.__LINE__);
-
 $myBadge = new MyBadge();
 
 $_m7Day = ___endDate('-7 day');

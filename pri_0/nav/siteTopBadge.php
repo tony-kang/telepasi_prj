@@ -6,7 +6,6 @@
  *
  */
 
-___debug(__FILE__.__LINE__);
 //$iconBadgeArr = [];
 //$hasBadge = false;
 //
